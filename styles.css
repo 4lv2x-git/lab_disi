@@ -1,0 +1,160 @@
+/* styles.css - Modern, simple, and accessible for the whole team website */
+
+:root {
+    --main-bg: #f7f9fa;
+    --container-bg: #fff;
+    --primary: #2563eb;
+    --primary-dark: #1e40af;
+    --text: #222;
+    --text-light: #555;
+    --border: #e5e7eb;
+    --radius: 10px;
+    --focus: #facc15;
+}
+
+html {
+    font-size: 18px;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: var(--main-bg);
+    color: var(--text);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+.container {
+    background: var(--container-bg);
+    max-width: 900px;
+    margin: 2rem auto;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 2.5rem 2rem;
+}
+
+h1, h2, h3 {
+    color: var(--primary-dark);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+ul, ol {
+    padding-left: 1.2em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+a:hover, a:focus {
+    color: var(--primary-dark);
+    outline: 2px solid var(--focus);
+    outline-offset: 2px;
+}
+
+img {
+    border-radius: 50%;
+    max-width: 140px;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: #fafbfc;
+}
+th, td {
+    border: 1px solid var(--border);
+    padding: 0.5em 0.7em;
+    text-align: center;
+}
+th {
+    background: var(--primary);
+    color: #fff;
+}
+
+/* Forms */
+form {
+    margin: 1.5rem 0;
+}
+input, textarea, select, button {
+    font-size: 1rem;
+    padding: 0.5em;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    margin-bottom: 0.7em;
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    color: var(--text);
+}
+input:focus, textarea:focus, select:focus {
+    outline: 2px solid var(--focus);
+    border-color: var(--primary);
+}
+button, input[type="submit"] {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.6em 1.2em;
+    cursor: pointer;
+    transition: background 0.2s;
+    width: auto;
+}
+button:hover, input[type="submit"]:hover, button:focus, input[type="submit"]:focus {
+    background: var(--primary-dark);
+    outline: 2px solid var(--focus);
+}
+
+/* Accessibility: high contrast for focus */
+:focus-visible {
+    outline: 2.5px solid var(--focus);
+    outline-offset: 2px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem 0.5rem;
+    }
+    table, th, td {
+        font-size: 0.95rem;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Footer */
+footer {
+    margin-top: 2rem;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    text-align: center;
+}
