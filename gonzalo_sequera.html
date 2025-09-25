@@ -29,7 +29,7 @@
     <section id="horarios">
         <h2>Horarios</h2>
         <p>Horarios de clases y tutorías</p>
-        <table>
+        <table border="0">
             <tr>
                 <th>Horas</th>
                 <th>Lunes</th>
@@ -74,29 +74,29 @@
     </section>
 
     <section id="contacto">
-        <h2>✉ Contacto</h2>
+        <h2>🖉 Contacto</h2>
+        <p>* Datos requeridos</p>
         <form>
-            <div class="form-group">
-                <label>Nombre: <input type="text" placeholder="Nombre Apellidos" required></label>
-            </div>
-            <div class="form-group">
-                <label>Email: <input type="email" placeholder="name@alumnos.unex.es"></label>
-                <small>Formato correcto: "name@alumnos.unex.es"</small>
-            </div>
-            <div class="form-group">
-                <label>Sitio Web: <input type="url" placeholder="http://unex.es"></label>
-                <small>Formato correcto: "http://unex.es"</small>
-            </div>
-            <div class="form-group">
-                <label>Mensaje:</label>
-                <textarea rows="4"></textarea>
-            </div>
-            <button type="submit">Enviar mensaje</button>
+            <ul>
+                <li>
+                    Nombre: <input type="text" placeholder="Nombre Apellidos" required>
+                </li>
+                <li>
+                    Email: <input type="email" placeholder="XXXX@alumnos.unex.es" required>
+                    Formato correcto: "name@alumnos.unex.es"
+                </li>
+                <li>
+                    Sitio web: <input type="url" placeholder="http://unex.es">
+                    Formato correcto: "http://unex.es"
+                </li>
+            </ul>
+            <p>Mensaje:<br>
+            <textarea rows="4" cols="40"></textarea>
+            </p>
+            <input type="submit" value="Enviar mensaje">
         </form>
     </section>
 
-    <footer>
-        <p>El autor: Gonzalo Sequera, <a href="mailto:gsequera@unex.es">gsequera@unex.es</a></p>
-    </footer>
+    <p><small>El autor: Gonzalo Sequera, <a href="mailto:gsequera@unex.es">gsequera@unex.es</a></small></p>
 </body>
 </html>

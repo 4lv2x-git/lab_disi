@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Javier García Espina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Javier García Espina</h1>
-    <p>Soy estudiante de ingeniería informática</p>
-
-    <img src="https://campusvirtual.unex.es/zonauex/avuex/pluginfile.php/2402572/user/icon/moove/f1?rev=100730160" alt="Foto personal" width="100px" height="100px">
-
+    <div>
+        <img src="https://campusvirtual.unex.es/zonauex/avuex/pluginfile.php/2402572/user/icon/moove/f1?rev=100730160" alt="Foto de Javier" width="100px" height="100px">
+    </div>
     <h2>Estudios</h2>
     <p>Estudio Ingeniería Informática del Software en la Universidad de Extremadura</p>
 
@@ -22,7 +22,7 @@
     </ul>
 
     <h2>Horarios</h2>
-    <p>Horarios de clases</p>
+    <p>Horarios de clases y tutorías</p>
     <table border="0">
         <tr>
             <th>Horas</th>
@@ -66,17 +66,28 @@
         </tr>
     </table>
 
-    <h2>Contacto</h2>
+    <h2>🖉 Contacto</h2>
+    <p>* Datos requeridos</p>
     <form>
-        <p>* Datos requeridos</p>
-        <label>Nombre: <input type="text" name="nombre"></label><br>
-        <label>Email: <input type="email" name="email"></label> <span>Formato: "nombre@dominio.com"</span><br>
-        <label>Sitio web: <input type="url" name="web"></label> <span>Formato: "http://tusitio.com"</span><br>
-        <label>Mensaje:</label><br>
-        <textarea name="mensaje" rows="4" cols="40"></textarea><br>
+        <ul>
+            <li>
+                Nombre: <input type="text" placeholder="Nombre Apellidos" required>
+            </li>
+            <li>
+                Email: <input type="email" placeholder="XXXX@alumnos.unex.es" required>
+                Formato correcto: "name@alumnos.unex.es"
+            </li>
+            <li>
+                Sitio web: <input type="url" placeholder="http://unex.es">
+                Formato correcto: "http://unex.es"
+            </li>
+        </ul>
+        <p>Mensaje:<br>
+        <textarea rows="4" cols="40"></textarea>
+        </p>
         <input type="submit" value="Enviar mensaje">
     </form>
 
-    <p>El autor: Javier García Espina, <a href="mailto:jgarciahtb@alumnos.unex.es">jgarciahtb@alumnos.unex.es</a></p>
+    <p><small>El autor: Javier García Espina, <a href="mailto:jgarciahtb@alumnos.unex.es">jgarciahtb@alumnos.unex.es</a></small></p>
 </body>
 </html>
