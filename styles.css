@@ -25,6 +25,7 @@ body {
     color: var(--text);
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
+    margin-left: 50px;
     min-height: 100vh;
     line-height: 1.6;
 }
